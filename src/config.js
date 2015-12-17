@@ -3,7 +3,13 @@ require.config({
 	deps:['main'],
 	//enforceDefine:true,
 	paths:{
-		'knockout':'../external/knockout-3.4.0'
+		'knockout':'../external/knockout-3.4.0',
+		'smokesignals':'../external/smokesignals'
+	},
+	shim:{
+		'smokesignals':{
+			exports:'smokesignals'
+		}
 	}
 });
 define();
