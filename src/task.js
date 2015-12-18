@@ -2,12 +2,12 @@
 define(function(){
 	'use strict';
 	/* constructor para el objeto task */
-	function Task(){
-		this.completed=false;
-		this.name=name;
+	function Task(name) {
+		this.completed = false;
+		this.name = name;
 	}
-	Task.prototype={};
-	Task.prototype.constructor=Task;
+	Task.prototype = {};
+	Task.prototype.constructor = Task;
 
 	return Task;
 });
